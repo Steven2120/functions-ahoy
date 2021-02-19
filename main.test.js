@@ -1,11 +1,41 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
  **********************************/
+let x = 3;
+let y = 10;
+let z = 4;
+let greeting = "hello";
+let firstName = "Steven";
+let callStatus = "ringing";
 
+function double() {
+  x = x + x;
+  return x;
+}
 
+function triple() {
+  y = y + y + y;
+  return y;
+}
 
+function square() {
+  z = z * z;
+  return z;
+}
 
- 
+function beNice() {
+  greeting = "hello" + " " + firstName;
+}
+
+function changeName() {
+  firstName = "Danger";
+  return firstName;
+}
+
+function hangUp() {
+  callStatus = "call ended";
+  return callStatus;
+}
 
 /*********************************************************************************************************************
 
@@ -62,7 +92,6 @@ if (typeof changeName === 'undefined') {
 if (typeof hangUp === 'undefined') {
   hangUp = undefined;
 }
-
 
 describe('double', () => {
   it(`doubles x`, () => {
